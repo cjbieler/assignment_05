@@ -39,7 +39,11 @@ def hours_grid(history: pd.DataFrame) -> pd.DataFrame:
       values="hours_worked",
       fill_value=0,
     ).reset_index()
-    week_columns = sorted(column for column in grid.columns if column not in {"employee_id", "display_name"})
+    week_columns = sorted(
+      column
+      for column in grid.columns
+      if column not in {"employee_id", "display_name"}
+    )
     grid = grid[["employee_id", "display_name", *week_columns]]
     return grid.sort_values("employee_id").reset_index(drop=True)
 

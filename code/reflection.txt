@@ -5,3 +5,12 @@ terminology from this assignment (grain, long vs. wide, vectorized .str methods,
 coerce, NaT, pd.to_datetime format, .dt, concat, ignore_index, group by, named
 aggregation, reset_index, pivot_table, fill_value, melt, lineage), and make it
 actionable.
+
+This assignment helped me to better understand cleaning and organizing data from multiple
+files using Pandas. I learned how to use .str to standardize inconsistent data and
+pd.concat to combine datasets. The most challenging part was understanding how 
+pivot_table and melt work together to reshape data, especially when identifying
+missed weeks that weren't recorded in the original data. I also gained a better
+understanding of groupby and how it changes the grain of a dataset. Moving forward,
+I want to practice reshaping data so I can better recognize when to use each method
+without relying on examples.
